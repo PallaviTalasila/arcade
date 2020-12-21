@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="us">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script defer src="app.js"></script>
+  </head>
+
+  <body>
+    <div id="modal-container">
+      <div class="modal-background">
+        <div class="modal">         
+          <svg class="modal-svg" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="none">
+                    <rect x="0" y="0" fill="none" width="226" height="162" rx="3" ry="3"></rect>
+                  </svg>
+        </div>
+      </div>
+    </div>
+    <div class="board">
+      <div id="0" class="cell"><span></span></div>
+      <div id="1" class="cell"><span></span></div>
+      <div id="2" class="cell"><span></span></div>
+      <div id="3" class="cell"><span></span></div>
+      <div id="4" class="cell"><span></span></div>
+      <div id="5" class="cell"><span></span></div>
+      <div id="6" class="cell"><span></span></div>
+      <div id="7" class="cell"><span></span></div>
+      <div id="8" class="cell"><span></span></div>
+    </div>
+    <div class="button-container">
+      <div id ="one-player" class="start-button">One Player</div>
+      <div id ="two-player" class="start-button">Two Player</div>
+    </div>
+    <div class="stats-container">      
+      <input id ="playerx" class="pill-button" placeholder="Player One Name Here" autocomplete="off"></input>
+      <input id ="playero" class="pill-button" placeholder="Player Two Name Here" autocomplete="off"></input>
+      <div id ="start" class="pill-button">Start</div>
+    </div>
+    <div class="score-panel">
+      <div id ="player-one" class="panel-button">Player One</div>   
+      <div id ="reset"class="panel-button">Reset</div>   
+      <div id ="player-two"class="panel-button">Player Two</div>        
+    </div>
+  </body>
+</html>
